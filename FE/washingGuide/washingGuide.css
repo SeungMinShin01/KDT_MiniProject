@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 body {
@@ -73,6 +73,7 @@ button {
 
 .logo-wrap {
   display: flex;
+  align-items: center;
 }
 
 /* ============메인영역===============*/
@@ -107,6 +108,8 @@ button {
 .main-inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .left-main {
@@ -185,7 +188,7 @@ button {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 350px;
+  height: 550px;
   gap: 20px 10px;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -194,17 +197,20 @@ button {
 .cloth-card {
   display: flex;
   flex-direction: column;
+
   width: 23%;
   height: 250px;
   border-radius: 12px;
   box-shadow: 2px 2px #eeeeee;
   border: 1px solid #eeeeee;
+  margin-top: 5px;
 }
 
 .cloth-card > img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 12px;
 }
 .cloth-card > h4 {
   margin: 5px 0;
@@ -242,4 +248,11 @@ button {
 .badge-blue {
   color: #5074a8;
   background-color: #eaf1fb;
+}
+
+/* 우측 설명 칸 */
+.right-main {
+  height: 550px;
+  border: 1px solid #c4c4c4;
+  border-radius: 12px;
 }
