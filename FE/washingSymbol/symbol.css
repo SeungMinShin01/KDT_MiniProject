@@ -71,8 +71,8 @@ button {
 .logo-wrap {
   display: flex;
 }
-.main_logo{
-    width: 85px;
+.main_logo {
+  width: 85px;
 }
 
 /* ============메인영역===============*/
@@ -83,10 +83,12 @@ button {
   margin: 28px auto;
   height: 500px;
 }
-.main-wrap{
-    width: 100px;
+.main-wrap {
+  width: 100px;
 }
-.main-wrap>p{font-size: }
+.main-wrap > p {
+  font-size: 11px;
+}
 .search-wrap {
   position: relative;
 }

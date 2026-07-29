@@ -96,6 +96,13 @@ button {
   margin: 14px auto;
 }
 
+.logo-wrap {
+  display: flex;
+}
+.main_logo {
+  width: 85px;
+}
+
 /* ============메인 내부 요소 ===============*/
 
 .main-inner {
