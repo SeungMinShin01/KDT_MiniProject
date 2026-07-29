@@ -11,7 +11,7 @@
     <div id="header">
       <div id="header-inner">
         <div class="logo-wrap">
-          <div class="logo"><img class="main_logo" src="img_세탁/mainlogo.png"/></div>
+          <div class="logo"><img class="main_logo" src="/FE/assets/mainlogo.png"/></div>
           <div>
             <h1 class="logo-title">Laundry Helper</h1>
             <p class="logo-subtitle">세탁 도우미</p>
@@ -28,36 +28,52 @@
     <!-- 메인 영역 -->
     <div id="main">
       <!-- 작업 영역 -->
-      <div class="main-wrap">
-        <div>
+       <div class="head-wrap"> 
+        <div class="main-head">
           <h3 class="p3main"> 세탁기호</h3>
           <p>의류 라벨에 표시된 세탁기호와 의미를 확인하세요.</p>
         </div>
+
+        <div class="search-wrap">
+          <input
+            type="text"
+            class="main-searchBox"
+            placeholder="의류명을 검색하세요."/>
+          <button class="search-btn" type="button">
+            <svg
+              xmlns="http://w3.org"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#2563EB"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="search-wrap">
-        <input
-          type="text"
-          class="main-searchBox"
-          placeholder="의류명을 검색하세요."/>
-        <button class="search-btn" type="button">
-          <svg
-            xmlns="http://w3.org"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-            fill="none"
-            stroke="#2563EB"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
+
+
+      <div class="main-wrap">
+        <div class="main-side">
+          <ul>
+            <li><a href='#'>전체</a></li>
+            <li><a href='#'>물세탁</a></li>
+            <li><a href='#'>표백</a></li>
+            <li><a href='#'>건조</a></li>
+            <li><a href='#'>다림질</a></li>
+            <li><a href='#'>드라이클리닝</a></li>
+            <li><a href='#'>기타</a></li>
+          </ul>
+        </div>
+
+        <div class="symbol-wrap"></div>
       </div>
-      
-      <div></div>
     </div>
     <!-- 푸터 영역 -->
     <div id="footer">

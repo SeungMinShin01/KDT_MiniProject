@@ -19,7 +19,8 @@ select {
 button {
   cursor: pointer;
 }
-
+li{ list-style-type: none;}
+a{text-decoration: none; color: black;}
 /*=================================헤더===============================*/
 #header {
   height: 76px;
@@ -48,7 +49,7 @@ button {
   margin: 0;
   color: #175cd3;
   font-size: 20px;
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .logo-subtitle {
@@ -72,7 +73,7 @@ button {
   display: flex;
 }
 .main_logo{
-    width: 85px;
+    width: 80px;
 }
 
 /* ============메인영역===============*/
@@ -83,13 +84,63 @@ button {
   margin: 28px auto;
   height: 500px;
 }
-.main-wrap{
-    width: 100px;
+.head-wrap{display: flex;}
+.main-head{
+    width: 250px;
+    margin: 0px 10px;
 }
-.main-wrap>p{font-size: }
+.main-head>h3{
+    font-size: 30px; font-weight: bold;
+    margin: 0px;
+}
+.main-head>p{font-size: 11px;}
 .search-wrap {
   position: relative;
+  top: 30px; left: 50%;
 }
+.search-wrap > .search-btn {
+  background-color: transparent;
+  width: 12px;
+  position: absolute;
+  right: 13%;
+  top: 3%;
+  border: none;
+}
+.main-searchBox{
+    border-radius: 13px;
+    padding: 5px;
+}
+.main-side{
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ============푸터영역===============*/
 #footer {
