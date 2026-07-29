@@ -1,7 +1,54 @@
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+   border: 1px solid red; 
 }
+
+/*================건조페이지 css start ==================*/
+/*건조페이지 전체*/
+.dryingGuide {
+    width: 100%;
+}
+/*건조페이지 상단*/
+#dryTop{
+    margin: 0;
+    padding: 0;
+}
+/* 제목 영역 */
+#dryTop h2 {
+    margin: 0;
+    font-size: 32px;
+}
+
+#dryTop p {
+    margin: 8px 0 0;
+}
+
+.dry-content{
+    display: flex;
+    margin-top:  40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body {
   margin: 0;
