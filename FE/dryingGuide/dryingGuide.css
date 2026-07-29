@@ -3,32 +3,286 @@
    border: 1px solid red; 
 }
 
-/*================건조페이지 css start ==================*/
-/*건조페이지 전체*/
-.dryingGuide {
-    width: 100%;
-}
-/*건조페이지 상단*/
-#dryTop{
-    margin: 0;
-    padding: 0;
-}
-/* 제목 영역 */
-#dryTop h2 {
-    margin: 0;
-    font-size: 32px;
+body{
+    margin:0;
+    background-color:#f5f7fb;
+    font-family: Arial, "Noto Sans KR", sans-serif;
 }
 
-#dryTop p {
-    margin: 8px 0 0;
+/*================== 건조 페이지 ==================*/
+
+.dryingGuide{
+    width:100%;
+    background-color: #EFF5FC ;
 }
 
-.dry-content{
+#dryTop h2{
+    margin:0;
+    font-size:35px;
+}
+
+#dryTop p{
+    margin-top:10px;
+    color:gray;
+}
+
+/* 본문 */
+
+.dry-Content{
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+}
+
+/* 왼쪽 */
+
+.dry-Left{
+    width:30%;
+}
+
+/* 의류 카드 */
+
+#clothes-card{
+    background-color:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0px 3px 8px lightgray;
+}
+
+#clothes-card img{
+    width:220px;
+}
+
+#clothes-card h3{
+    margin-top:15px;
+}
+
+#clothes-card span{
+    color:gray;
+    font-size:15px;
+}
+
+/* 세탁기호 */
+
+#symbol-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+.symbol-card{
+    width:48%;
+    background-color:white;
+    box-shadow:0px 3px 8px lightgray;
+    background:white;
+    border-radius:10px;
+    margin-bottom:15px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.symbol-card img{
+    width:80px;   
+    height:80px;
     display: flex;
-    margin-top:  40px;
+    align-items: center;
 }
 
+/* 오른쪽 */
 
+.dry-right{
+    width:65%;
+}
+
+/* 권장 건조 */
+
+#dry-info{
+    background-color:white;
+    border:2px solid #8ce28c;
+    border-radius:15px;
+    padding:30px;
+}
+
+#dry-info h2{
+    margin:0;
+}
+
+#dry-info h2:nth-child(2){
+    margin-top:25px;
+}
+
+#dry-info p{
+    margin-top:20px;
+    color:gray;
+    line-height:30px;
+}
+
+/* TIP */
+
+#drt-tip{
+    margin-top:40px;
+    background-color:white;
+    border:2px solid pink;
+    border-radius:15px;
+    padding:30px;
+}
+
+#drt-tip h2{
+    margin:0;
+    color:red;
+}
+
+#drt-tip p{
+    margin-top:20px;
+    color:gray;
+    line-height:30px;
+}
+
+/*================== 헤더 ==================*/
+
+#header{
+    height:76px;
+    background:white;
+    border-bottom:1px solid #ddd;
+}
+
+#header-inner{
+    width:94%;
+    height:100%;
+    margin:0 auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-wrap{
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    margin-right:20px;
+}
+
+.logo-title{
+    margin:0;
+    color:#175cd3;
+}
+
+.logo-subtitle{
+    margin:0;
+    color:#5b7dbd;
+}
+
+.nav{
+    display:flex;
+}
+
+.nav a{
+    text-decoration:none;
+    color:black;
+    margin-left:40px;
+    padding:28px 0;
+}
+/* =========================
+   푸터
+========================= */
+
+#footer {
+    width: 100%;
+    height: 100px;
+}
+
+.footer-inner {
+    width: 94%;
+    max-width: 1500px;
+    margin: 14px auto;
+}
+
+/* =========================
+   반응형
+========================= */
+
+@media screen and (max-width: 950px) {
+    #header {
+        height: auto;
+    }
+
+    #header-inner {
+        padding: 18px 0;
+
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav {
+        gap: 20px;
+    }
+
+    .nav a {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .dry-Content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .dry-Left {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .dry-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #main {
+        width: 90%;
+    }
+
+    #dryTop h2 {
+        font-size: 30px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #clothes-card img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .symbol-card {
+        height: 125px;
+    }
+
+    #dry-info,
+    #drt-tip {
+        padding: 25px;
+    }
+
+    #dry-info h2,
+    #drt-tip h2 {
+        font-size: 24px;
+    }
+
+    #dry-info p,
+    #drt-tip p {
+        font-size: 16px;
+    }
+}
 
 
 
