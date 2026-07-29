@@ -117,6 +117,24 @@ button {
   border: none;
 }
 
+.tip-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 18px;
+  object-fit: contain;
+}
+
+.tip-title {
+  margin: 0 0 5px;
+  font-size: 17px;
+  color: #1269d3;
+}
+
+.tip-content p {
+  margin: 0;
+  font-size: 11px;
+  color: #5d6990;
+}
 /* ============푸터===============*/
 #footer {
   width: 100%;
