@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -81,7 +81,6 @@ button {
   width: 94%;
   max-width: 1500px;
   margin: 28px auto;
-  height: 500px;
 }
 
 #footer {
@@ -112,7 +111,6 @@ button {
 
 .left-main {
   width: 60%;
-  height: 400px;
 }
 
 .right-main {
@@ -179,4 +177,69 @@ button {
   right: 22%;
   top: 14%;
   border: none;
+}
+
+/*==============왼쪽 내부 카드=======================*/
+.cloth-grid {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 350px;
+  gap: 20px 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.cloth-card {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  height: 250px;
+  border-radius: 12px;
+  box-shadow: 2px 2px #eeeeee;
+  border: 1px solid #eeeeee;
+}
+
+.cloth-card > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.cloth-card > h4 {
+  margin: 5px 0;
+}
+.cloth-card > h4 span {
+  font-size: 13px;
+  color: #7d7d7d;
+}
+
+.badge-wrap {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3px 10px;
+  border-radius: 10px;
+
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-green {
+  color: #398354;
+  background-color: #e9f7ed;
+}
+
+.badge-blue {
+  color: #5074a8;
+  background-color: #eaf1fb;
 }
