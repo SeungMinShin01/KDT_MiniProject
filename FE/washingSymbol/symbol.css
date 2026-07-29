@@ -83,7 +83,15 @@ button {
   margin: 28px auto;
   height: 500px;
 }
+.main-wrap{
+    width: 100px;
+}
+.main-wrap>p{font-size: }
+.search-wrap {
+  position: relative;
+}
 
+/* ============푸터영역===============*/
 #footer {
   width: 100%;
 
