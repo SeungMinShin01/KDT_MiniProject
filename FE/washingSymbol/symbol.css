@@ -10,10 +10,6 @@ body {
   font-family: Arial, "Noto Sans KR", sans-serif; /* 나중에 바꿀 폰트 */
 }
 
-li {
-  list-style: none;
-}
-
 button,
 input,
 select {
@@ -52,6 +48,7 @@ button {
   margin: 0;
   color: #175cd3;
   font-size: 20px;
+  margin-top: 15px;
 }
 
 .logo-subtitle {
@@ -74,6 +71,9 @@ button {
 .logo-wrap {
   display: flex;
 }
+.main_logo {
+  width: 85px;
+}
 
 /* ============메인영역===============*/
 
@@ -83,7 +83,17 @@ button {
   margin: 28px auto;
   height: 500px;
 }
+.main-wrap {
+  width: 100px;
+}
+.main-wrap > p {
+  font-size: 11px;
+}
+.search-wrap {
+  position: relative;
+}
 
+/* ============푸터영역===============*/
 #footer {
   width: 100%;
 
@@ -94,89 +104,4 @@ button {
   width: 94%;
   max-width: 1500px;
   margin: 14px auto;
-}
-
-.logo-wrap {
-  display: flex;
-}
-.main_logo {
-  width: 85px;
-}
-
-/* ============메인 내부 요소 ===============*/
-
-.main-inner {
-  display: flex;
-  justify-content: space-between;
-}
-
-.left-main {
-  width: 60%;
-  height: 400px;
-}
-
-.right-main {
-  width: 35%;
-  height: 400px;
-}
-
-.main-title {
-  padding: 10px;
-}
-
-.main-title > div {
-  margin: -10px 0px 10px 0px;
-}
-
-.main-topMenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.btn-list {
-  display: flex;
-  padding: 10px;
-}
-
-.btn-list > li {
-  display: flex;
-  width: 60px;
-
-  justify-content: center;
-  margin-right: 30px;
-}
-
-.btn-list > li > button {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #c6c5c5;
-  border-radius: 7px;
-  font-size: 14px;
-  padding: 7px 5px;
-}
-.main-topMenu > div > div > input {
-  margin-right: 20px;
-  height: 40px;
-  border-radius: 12px;
-  font-size: 16px;
-  border: 1px solid #c6c5c5;
-}
-
-.main-topMenu > div {
-  display: flex;
-}
-
-.input-wrap {
-  position: relative;
-}
-
-.input-wrap > .search-btn {
-  background-color: transparent;
-  width: 12px;
-  position: absolute;
-  right: 22%;
-  top: 14%;
-  border: none;
 }
