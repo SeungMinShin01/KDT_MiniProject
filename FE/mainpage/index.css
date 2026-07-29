@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px solid red; 
+  border: 1px solid red;
 }
 
 body {
@@ -80,8 +80,41 @@ button {
   height: 500px;
 }
 
-.main-title{
-  
+.top-top{
+  padding-left: 30px;
+  color: black;
+  font-weight: 700;
+
+}
+
+.top-title{
+  padding-left: 30px;
+  color: #175cd3;
+  font-weight: 700;
+}
+
+.top-bottom{
+  padding-left: 30px;
+  font-size: 13px;
+  color: #6F6990;
+}
+
+.input-wrap {
+  position: relative;
+  padding-left: 30px;
+}
+.search-input{
+  width: 315px;
+  height: 30px;
+  font-size: 13px;
+}
+.search {
+  background-color: transparent;
+  width: 20px;
+  position: absolute;
+  left: 310px;
+  top: 1px;
+  border: none;
 }
 
 /* ============푸터===============*/
