@@ -591,10 +591,10 @@ function getLocalclothesSymbolList() {
 function getLocalClothesDryingList(){
   let ClothesDrying = localStorage.getItem("ClothesDrying");
   if(ClothesDrying == null){
-    localStorage.setItem("ClothesDrying",clothesDryingList);
+    localStorage.setItem("ClothesDrying",JSON.stringify(clothesDryingList));
     return clothesDryingList;
   }
-  else{ClothesDrying = JSON.parse("ClothesDrying");
+  else{ClothesDrying = JSON.parse(ClothesDrying);
   }
   return ClothesDrying;
 }
@@ -607,6 +607,7 @@ function getAllLocalData() {
   getLocaldryingGuideList();
   getLocalsymbol();
   getLocalwashingGuide();
+  getLocalClothesDryingList()
 }
 // function setLocalCategory() {
 //   getLocalCategory(); //return category = [];
