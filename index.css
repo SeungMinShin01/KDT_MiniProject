@@ -86,7 +86,7 @@ button {
 #main {
   width: 100%;
   max-width: 1550px;
-  height: 666px;
+  height: 663px;
   background-image: url("./FE/assets/main/background.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -127,7 +127,7 @@ button {
   display: flex;
   justify-content: center;
   gap: 70px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 38px;
 }
 
