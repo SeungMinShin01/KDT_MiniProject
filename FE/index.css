@@ -80,63 +80,182 @@ button {
   height: 500px;
 }
 
-.top-top{
-  padding-left: 30px;
-  color: black;
-  font-weight: 700;
 
+.main-top {
+  margin-bottom: 25px;
 }
 
-.top-title{
-  padding-left: 30px;
-  color: #175cd3;
-  font-weight: 700;
+.top-top {
+  margin: 0 0 5px;
+  font-size: 20px;
 }
 
-.top-bottom{
-  padding-left: 30px;
-  font-size: 13px;
-  color: #6F6990;
+.top-title {
+  margin: 0 0 10px;
+  font-size: 40px;
+  color: #244889;
 }
 
+.top-bottom {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #526084;
+}
+
+/* 메인 안쪽 */
+.main-inner {
+  width: 100%;
+}
+
+/* 검색창 전체 */
 .input-wrap {
   position: relative;
-  padding-left: 30px;
-}
-.search-input{
-  width: 315px;
-  height: 30px;
-  font-size: 13px;
-}
-.search {
-  background-color: transparent;
-  width: 20px;
-  position: absolute;
-  left: 310px;
-  top: 1px;
-  border: none;
+  width: 335px;
+  margin-bottom: 30px;
 }
 
-.tip-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 18px;
+/* 검색 입력창 */
+.search-input {
+  width: 100%;
+  height: 45px;
+  padding-left: 12px;
+  padding-right: 55px;
+  font-size: 12px;
+  border: 1px solid #999999;
+  border-radius: 17px;
+  outline: none;
+  background-color: white;
+}
+
+/* 검색창 클릭 시 */
+.search-input:focus {
+  border-color: #0868b7;
+}
+
+/* 검색 버튼 */
+.search {
+  position: absolute;
+  top: 4px;
+  right: 7px;
+  width: 40px;
+  height: 38px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* 검색 아이콘 */
+.search svg {
+  width: 38px;
+  height: 38px;
+}
+
+/* 카드 3개 영역 */
+.menu-card {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+
+  margin-top: 15px;
+  margin-bottom: 38px;
+}
+
+/* 각각의 카드 */
+.service-card {
+  width: 182px;
+  height: 192px;
+
+  padding: 30px 15px 15px;
+
+  text-align: center;
+
+  background-color: white;
+  border-radius: 6px;
+
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* 카드에 마우스를 올렸을 때 */
+.service-card:hover {
+  transform: translateY(-3px);
+}
+
+/* 카드 이미지 */
+.service-icon {
+  width: 75px;
+  height: 75px;
+
+  margin: 0 auto 10px;
+
   object-fit: contain;
 }
 
-.service-card{
-  
-}
-.tip-title {
-  margin: 0 0 5px;
-  font-size: 17px;
-  color: #1269d3;
+/* 카드 제목 */
+.service-title {
+  margin: 0 0 4px;
+
+  font-size: 21px;
+  color: #234783;
+
+  text-decoration: underline;
 }
 
+/* 카드 설명 */
+.service-content p {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 1.4;
+
+  color: #444444;
+}
+
+/* 아래쪽 세탁 팁 박스 */
+.main-bottom {
+  display: flex;
+  align-items: center;
+
+  width: 760px;
+  min-height: 80px;
+
+  margin: 0 auto;
+  padding: 15px 25px;
+
+  background-color: #c6dbf5;
+  border-radius: 17px;
+
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* 전구 이미지 */
+.tip-icon {
+  width: 50px;
+  height: 50px;
+
+  margin-right: 20px;
+
+  object-fit: contain;
+}
+
+/* 팁 내용 */
+.tip-content {
+  flex: 1;
+}
+
+/* 팁 제목 */
+.tip-title {
+  margin: 0 0 5px;
+
+  font-size: 20px;
+  color: #0868d9;
+}
+
+/* 팁 설명 */
 .tip-content p {
   margin: 0;
-  font-size: 11px;
-  color: #5d6990;
+
+  font-size: 13px;
+  color: #5a6486;
 }
 /* ============푸터===============*/
 #footer {
