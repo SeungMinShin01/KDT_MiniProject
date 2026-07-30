@@ -73,9 +73,14 @@ button {
 
 .logo-wrap {
   display: flex;
+  align-items: center ;
 }
 
-
+.logo-wrap > a{
+  display: flex;
+  align-items: center ;
+  text-decoration: none;
+}
 /* ============메인영역===============*/
 
 #main {
