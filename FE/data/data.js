@@ -146,7 +146,7 @@ const washingGuideList = [
     clothesId: 1,
     waterTemperature: "30℃ 이하",
     washingMethod: "일반 세탁",
-    recommendedDetergent: "중성세제 또는 일반세제",
+    recommendedDetergent: "중성세제/  일반세제",
     caution: "색상 의류와 분리해서 세탁하세요.",
   },
   {
