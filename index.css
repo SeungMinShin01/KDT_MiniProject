@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
- /* border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 body {
@@ -91,12 +91,12 @@ button {
 }
 
 .top-top {
-  margin: 0 0 5px;
+  margin: 0 0 7px;
   font-size: 20px;
 }
 
 .top-title {
-  margin: 0 0 10px;
+  margin: 0 0 7px;
   font-size: 40px;
   color: #175cd3;
 }
@@ -152,7 +152,7 @@ button {
 .menu-card {
   display: flex;
   justify-content: center;
-  gap: 38px;
+  gap: 70px;
   margin-top: 15px;
   margin-bottom: 38px;
 }
@@ -196,8 +196,8 @@ button {
 .main-bottom {
   display: flex;
   align-items: center;
-  width: 760px;
-  min-height: 80px;
+  width: 1000px;
+  height: 85px;
   margin: 0 auto;
   padding: 15px 25px;
   background-color: #c6dbf5;
@@ -225,6 +225,13 @@ button {
 .tip-content p {
   font-size: 13px;
   color: #5a6486;
+}
+
+.arrow {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: auto;
+  color: #0868d9;
 }
 /* ============푸터===============*/
 #footer {
