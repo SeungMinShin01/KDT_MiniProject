@@ -1,13 +1,15 @@
 
+printSymbol();
 
-
-function 기호출력(){
+function printSymbol(){
     getLocalsymbol()
-    for(i=0; i<=washingSymbolList.length;i++){
+    let html =''
+    for(i=0; i<=washingSymbolList.length-1;i++){
+        let object = washingSymbolList[i]
 
-        let html =''
-        symbol=washingSymbolList[i];
-        html += `<div><img src="/FE/assets/세탁기호/img_세탁기호 1.png"/> </div>`
+       console.log(object.imagePath)
+        html += `<div> <img src="${object.imagePath}"/> </div>`
     }
+    console.log(html);
     document.querySelector(".symbol-wrap").innerHTML=html
 }

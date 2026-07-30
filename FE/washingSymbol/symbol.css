@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -107,7 +107,7 @@ a {
   margin: 0px;
 }
 .head-wrap>div{
-  margin-left: 15px;
+  margin-left: 25px;
 }
 /* 검색기능 */
 .search-wrap {
@@ -156,7 +156,7 @@ img {
 }
 
 .symbol-wrap {
-  border: solid 5px blue;
+  /* border: solid 5px blue; */
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
@@ -183,8 +183,9 @@ img {
   align-items: center;
   background-color: #ffffff;
   border-radius: 15px;
-  width: 80%;
+  width: 80%; height: 130px;
   margin-left: 115px;
+  box-shadow: 0px 2px 2px rgba(141, 141, 141, 0.719);;
 }
 #bottom-wrap>div>h3{
   font-size: 23px;
