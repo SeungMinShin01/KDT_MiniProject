@@ -493,7 +493,7 @@ function getLocalMaterial() {
   if (material == null) {
     localStorage.setItem("material", JSON.stringify(materialList));
     return materialList;
-  } else material = JSON.parse("material");
+  } else material = JSON.parse(material);
   return material;
 }
 
@@ -504,7 +504,7 @@ function getLocalClothesList() {
   if (clothesList == null) {
     localStorage.setItem("clothesList", JSON.stringify(clothesList));
     return clothesList;
-  } else clothesList = JSON.parse("clothesList");
+  } else clothesList = JSON.parse(clothesList);
   return clothesList;
 }
 
@@ -515,7 +515,7 @@ function getLocalwashingGuide() {
   if (washingGuide == null) {
     localStorage.setItem("washingGuideList", JSON.stringify(washingGuideList));
     return washingGuideList;
-  } else washingGuide = JSON.parse("washingGuideList");
+  } else washingGuide = JSON.parse(washingGuide);
   return washingGuide;
 }
 
@@ -526,7 +526,7 @@ function getLocalsymbol() {
   if (symbolList == null) {
     localStorage.setItem("symbolList", JSON.stringify(washingSymbolList));
     return washingSymbolList;
-  } else symbol = JSON.parse("symbolList");
+  } else symbol = JSON.parse(symbolList);
   return symbol;
 }
 
@@ -535,20 +535,20 @@ function getLocaldryingGuideList() {
   // 의류별 건조방법 : dryingGuideList
   let dryingGuide = localStorage.getItem("dryingGuide");
   if (dryingGuide == null) {
-    localStorage.setItem("dryingGuide", dryingGuideList);
+    localStorage.setItem("dryingGuide", JSON.stringify(dryingGuideList));
     return dryingGuideList;
-  } else dryingGuide = JSON.parse("dryingGuide");
+  } else dryingGuide = JSON.parse(dryingGuide);
   return dryingGuide;
 }
 
 function getLocalclothesSymbolList() {
   // 객체 불러오기, 비어있으면 빈 배열 아니면 JSON.Parse();
   // 의류가 갖고있는 심볼 : clothesSymbolList
-  let clothesSymbol = localStorage.getItem("clothesSymbolList");
+  let clothesSymbol = localStorage.getItem("clothesSymbol");
   if (clothesSymbol == null) {
-    localStorage.setItem("clothesSymbolList", clothesSymbolList);
+    localStorage.setItem("clothesSymbol", JSON.stringify(clothesSymbolList));
     return clothesSymbolList;
-  } else clothesSymbol = JSON.parse("clothesSymbolList");
+  } else clothesSymbol = JSON.parse(clothesSymbol);
   return clothesSymbol;
 }
 
