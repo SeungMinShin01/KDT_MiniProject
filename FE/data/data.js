@@ -500,12 +500,12 @@ function getLocalMaterial() {
 function getLocalClothesList() {
   // 모든 객체 불러오기, 비어있으면 빈 배열 아니면 JSON.Parse();
   // 의류 : clothesList
-  let clothesList = localStorage.getItem("clothesList");
-  if (clothesList == null) {
+  let clotheList = localStorage.getItem("clothesList");
+  if (clotheList == null) {
     localStorage.setItem("clothesList", JSON.stringify(clothesList));
     return clothesList;
-  } else clothesList = JSON.parse(clothesList);
-  return clothesList;
+  } else clotheList = JSON.parse(clotheList);
+  return clotheList;
 }
 
 function getLocalwashingGuide() {
