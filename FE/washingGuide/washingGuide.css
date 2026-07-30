@@ -186,7 +186,7 @@ button {
 .cloth-grid {
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   height: 550px;
   gap: 20px 10px;
@@ -215,10 +215,6 @@ button {
 .cloth-card > h4 {
   margin: 5px 0;
 }
-.cloth-card > h4 span {
-  font-size: 13px;
-  color: #7d7d7d;
-}
 
 .badge-wrap {
   display: flex;
@@ -232,10 +228,10 @@ button {
   align-items: center;
   justify-content: center;
 
-  padding: 3px 10px;
+  padding: 3px 5px;
   border-radius: 10px;
 
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   white-space: nowrap;
 }
