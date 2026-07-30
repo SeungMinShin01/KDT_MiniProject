@@ -12,19 +12,21 @@
     <div id="header">
       <div id="header-inner">
         <div class="logo-wrap">
-          <div class="logo">
-            <img class="main_logo" src="/FE/assets/mainlogo.png" />
-          </div>
-          <div>
-            <h1 class="logo-title">Laundry Helper</h1>
-            <p class="logo-subtitle">세탁 도우미</p>
-          </div>
+          <a href="index.html">
+            <div class="logo">
+              <img class="main_logo" src="/FE/assets/mainlogo.png" />
+            </div>
+            <div>
+              <h1 class="logo-title">Laundry Helper</h1>
+              <p class="logo-subtitle">세탁 도우미</p>
+            </div>
+          </a>
         </div>
 
         <nav class="nav">
-          <a href="#">의류별 세탁법</a>
-          <a href="#">세탁 기호</a>
-          <a href="#">건조 방법</a>
+          <a href="../washingGuide/washingGuide.html">의류별 세탁법</a>
+          <a href="../washingSymbol/symbol.html">세탁 기호</a>
+          <a href="../dryingGuide/dryingGuide.html">건조 방법</a>
         </nav>
       </div>
     </div>
@@ -63,18 +65,17 @@
 
       <div class="main-wrap">
         <ul class="main-side">
-          <li><button class="side1" onclick="entire">전체</button></li>
-          <li><a href="#">물세탁</a></li>
-          <li><a href="#">표백</a></li>
-          <li><a href="#">건조</a></li>
-          <li><a href="#">다림질</a></li>
-          <li><a href="#">드라이클리닝</a></li>
-          <li><a href="#">기타</a></li>
+          <li><button class="side1" onclick="menuSymbol('전체')">전체</button></li>
+          <li><button class="side2" onclick="menuSymbol('물세탁')">물세탁</button></li>
+          <li><button class="side3" onclick="menuSymbol('표백')">표백</button></li>
+          <li><button class="side4" onclick="menuSymbol('건조')">건조</button></li>
+          <li><button class="side5" onclick="menuSymbol('다림질')">다림질</button></li>
+          <li><button class="side6" onclick="menuSymbol('드라이클리닝')">드라이클리닝</button></li>
+          <li><button class="side7" onclick="menuSymbol('기타')">기타</button></li>
         </ul>
 
         <div class="symbol-wrap">
-          
-          
+          <!-- 세탁기호 img -->
         </div>
       </div>
     </div>
