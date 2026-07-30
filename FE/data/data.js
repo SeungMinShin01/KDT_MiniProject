@@ -53,7 +53,7 @@ const clothesList = [
     clothesName: "색상 면 티셔츠",
     categoryId: 1,
     materialId: 1,
-    imagePath: "../assets/의류/img_색상_면_티셔츠.png",
+    imagePath: "../assets/의류/img_색상면티셔츠.png",
   },
   {
     clothesId: 3,

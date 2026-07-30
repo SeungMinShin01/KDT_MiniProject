@@ -1,4 +1,4 @@
-let selectedId = ;
+let selectedId = 1;
 dryPage();
 function dryPage(){
 
