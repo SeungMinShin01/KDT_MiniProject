@@ -46,21 +46,21 @@ const clothesList = [
     clothesName: "흰색 면 티셔츠",
     categoryId: 1,
     materialId: 1,
-    imagePath: "../assets/의류/img_흰색_면_티셔츠.png",
+    imagePath: "../assets/의류/img_흰티셔츠.png",
   },
   {
     clothesId: 2,
     clothesName: "색상 면 티셔츠",
     categoryId: 1,
     materialId: 1,
-    imagePath: "../assets/의류/img_색상_면_티셔츠.png",
+    imagePath: "../assets/의류/img_색상면티셔츠.png",
   },
   {
     clothesId: 3,
     clothesName: "청바지",
     categoryId: 2,
     materialId: 2,
-    imagePath: "./assets/의류/img_청바지.png",
+    imagePath: "../assets/의류/img_청바지.png",
   },
   {
     clothesId: 4,
@@ -109,28 +109,28 @@ const clothesList = [
     clothesName: "울 코트",
     categoryId: 3,
     materialId: 3,
-    imagePath: "../assets/의류/img_울_코트.png",
+    imagePath: "../assets/의류/img_울코트.png",
   },
   {
     clothesId: 11,
-    clothesName: "가죽 재킷",
+    clothesName: "가죽자켓",
     categoryId: 3,
     materialId: 10,
-    imagePath: "../assets/의류/img_가죽_재킷.png",
+    imagePath: "../assets/의류/img_가죽자켓.png",
   },
   {
     clothesId: 12,
-    clothesName: "실크 블라우스",
+    clothesName: "실크블라우스",
     categoryId: 1,
     materialId: 11,
-    imagePath: "../assets/의류/img_실크_블라우스.png",
+    imagePath: "../assets/의류/img_실크블라우스.png",
   },
   {
     clothesId: 13,
     clothesName: "린넨 셔츠",
     categoryId: 1,
     materialId: 12,
-    imagePath: "../assets/의류/img_린넨_셔츠.png",
+    imagePath: "../assets/의류/img_린넨셔츠.png",
   },
   {
     clothesId: 14,
@@ -591,10 +591,10 @@ function getLocalclothesSymbolList() {
 function getLocalClothesDryingList(){
   let ClothesDrying = localStorage.getItem("ClothesDrying");
   if(ClothesDrying == null){
-    localStorage.setItem("ClothesDrying",clothesDryingList);
+    localStorage.setItem("ClothesDrying",JSON.stringify(clothesDryingList));
     return clothesDryingList;
   }
-  else{ClothesDrying = JSON.parse("ClothesDrying");
+  else{ClothesDrying = JSON.parse(ClothesDrying);
   }
   return ClothesDrying;
 }
@@ -607,6 +607,7 @@ function getAllLocalData() {
   getLocaldryingGuideList();
   getLocalsymbol();
   getLocalwashingGuide();
+  getLocalClothesDryingList()
 }
 // function setLocalCategory() {
 //   getLocalCategory(); //return category = [];
