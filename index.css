@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+ /* border: 1px solid red;*/
 }
 
 body {
@@ -44,6 +44,10 @@ button {
   margin-right: 30px;
 }
 
+.main-logo {
+  width: 80px;
+}
+
 .logo-title {
   margin: 0;
   color: #175cd3;
@@ -71,6 +75,7 @@ button {
   display: flex;
 }
 
+
 /* ============메인영역===============*/
 
 #main {
@@ -93,7 +98,7 @@ button {
 .top-title {
   margin: 0 0 10px;
   font-size: 40px;
-  color: #244889;
+  color: #175cd3;
 }
 
 .top-bottom {
@@ -102,19 +107,16 @@ button {
   color: #526084;
 }
 
-/* 메인 안쪽 */
 .main-inner {
   width: 100%;
 }
 
-/* 검색창 전체 */
 .input-wrap {
   position: relative;
   width: 335px;
   margin-bottom: 30px;
 }
 
-/* 검색 입력창 */
 .search-input {
   width: 100%;
   height: 45px;
@@ -127,12 +129,10 @@ button {
   background-color: white;
 }
 
-/* 검색창 클릭 시 */
 .search-input:focus {
   border-color: #0868b7;
 }
 
-/* 검색 버튼 */
 .search {
   position: absolute;
   top: 4px;
@@ -144,116 +144,85 @@ button {
   cursor: pointer;
 }
 
-/* 검색 아이콘 */
 .search svg {
   width: 38px;
   height: 38px;
 }
 
-/* 카드 3개 영역 */
 .menu-card {
   display: flex;
   justify-content: center;
   gap: 38px;
-
   margin-top: 15px;
   margin-bottom: 38px;
 }
 
-/* 각각의 카드 */
 .service-card {
   width: 182px;
   height: 192px;
-
-  padding: 30px 15px 15px;
-
+  padding: 10px 10px 10px;
   text-align: center;
-
   background-color: white;
   border-radius: 6px;
-
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
 
-/* 카드에 마우스를 올렸을 때 */
 .service-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(1px);
 }
 
-/* 카드 이미지 */
+
 .service-icon {
-  width: 75px;
-  height: 75px;
-
-  margin: 0 auto 10px;
-
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
   object-fit: contain;
 }
 
-/* 카드 제목 */
 .service-title {
   margin: 0 0 4px;
-
-  font-size: 21px;
+  font-size: 20px;
   color: #234783;
-
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* 카드 설명 */
 .service-content p {
   margin: 0;
-
   font-size: 12px;
-  line-height: 1.4;
-
   color: #444444;
 }
 
-/* 아래쪽 세탁 팁 박스 */
 .main-bottom {
   display: flex;
   align-items: center;
-
   width: 760px;
   min-height: 80px;
-
   margin: 0 auto;
   padding: 15px 25px;
-
   background-color: #c6dbf5;
   border-radius: 17px;
-
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* 전구 이미지 */
 .tip-icon {
-  width: 50px;
-  height: 50px;
-
+  width: 70px;
+  height: 70px;
   margin-right: 20px;
-
   object-fit: contain;
 }
 
-/* 팁 내용 */
 .tip-content {
   flex: 1;
 }
 
-/* 팁 제목 */
 .tip-title {
   margin: 0 0 5px;
-
   font-size: 20px;
   color: #0868d9;
 }
 
-/* 팁 설명 */
 .tip-content p {
-  margin: 0;
-
   font-size: 13px;
   color: #5a6486;
 }
