@@ -4,6 +4,11 @@
 .dryingGuide{
     padding: 50px;
     background-color: #EFF5FC;
+    background-image: url("../assets/의류/img_세탁기.png");
+    background-repeat: no-repeat;
+    background-size: 260px;
+    background-position: 95% 10px;
+    
 }
 
 #dryTop h2{
@@ -16,6 +21,7 @@
     margin-top: 10px;
     color: gray;
 }
+
 
 /* ================= 본문 ================= */
 
@@ -79,10 +85,10 @@
 }
 
 .symbol-card{
-    width: 48%;
-    height: 90px;
-    margin-bottom: 15px;
+   width: 48%;
+    height: 130px;
 
+    margin-bottom: 15px;
     background-color: white;
     border-radius: 15px;
 
@@ -94,7 +100,8 @@
 }
 
 .symbol-card img{
-    width:70px;
+    width: 70px;
+    height: 70px;
 }
 
 /* ================= 건조 정보 ================= */
