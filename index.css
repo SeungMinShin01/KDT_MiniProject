@@ -1,13 +1,13 @@
 * {
   box-sizing: border-box;
- /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 body {
   margin: 0;
   color: #172033;
   background-color: #f5f7fb;
-  font-family: Arial, "Noto Sans KR", sans-serif; /* 나중에 바꿀 폰트 */
+  font-family: Arial, "Noto Sans KR", sans-serif; 
 }
 
 button,
@@ -84,37 +84,39 @@ button {
 /* ============메인영역===============*/
 
 #main {
-  width: 94%;
-  max-width: 1500px;
-  margin: 28px auto;
-  height: 500px;
+  width: 100%;
+  max-width: 1550px;
+  height: 666px;
+  background-image: url("./FE/assets/main/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 
 .main-top {
   margin-bottom: 20px;
-  width:100%;
-  background-color: #EFF5FC ;
 }
 
 .top-top {
   margin: 0 0 7px;
   font-size: 20px;
-  padding-left: 40px;
+  padding-top: 10px;
+  padding-left: 80px;
 }
 
 .top-title {
   margin: 0 0 7px;
   font-size: 40px;
   color: #175cd3;
-  padding-left: 40px;
+  padding-left: 80px;
 }
 
 .top-bottom {
   font-size: 15px;
   line-height: 1.4;
   color: #526084;
-  padding-left: 40px;
+  padding-left: 80px;
 }
 
 .main-inner {
@@ -125,7 +127,7 @@ button {
   display: flex;
   justify-content: center;
   gap: 70px;
-  margin-top: 15px;
+  margin-top: 40px;
   margin-bottom: 38px;
 }
 
@@ -175,6 +177,7 @@ button {
   background-color: #c6dbf5;
   border-radius: 17px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+
 }
 
 .tip-icon {
@@ -203,16 +206,4 @@ button {
   font-size: 45px;
   margin-left: auto;
   color: #0868d9;
-}
-/* ============푸터===============*/
-#footer {
-  width: 100%;
-
-  height: 100px;
-}
-
-.footer-inner {
-  width: 94%;
-  max-width: 1500px;
-  margin: 14px auto;
 }
