@@ -54,7 +54,6 @@ a {
   margin: 0;
   color: #175cd3;
   font-size: 20px;
-  margin-top: 35px;
 }
 
 .logo-subtitle {
@@ -76,6 +75,12 @@ a {
 
 .logo-wrap {
   display: flex;
+  align-items: center;
+}
+.logo-wrap >a{
+  display: flex;
+  align-items: center;
+
 }
 .main_logo {
   width: 80px;
@@ -86,7 +91,8 @@ a {
 #main {
   width: 90%;
   max-width: 1500px;
-  margin: 28px auto;
+  margin: 10px auto;
+  margin-bottom: 10px;
   height: 500px;
 }
 .head-wrap {
@@ -100,6 +106,7 @@ a {
 .head-wrap > div > h3 {
   font-size: 35px;
   font-weight: bold;
+  color: #175cd3;
   margin: 0px;
 }
 .head-wrap > div > p {
@@ -150,19 +157,20 @@ a {
 }
 
 img {
-  width: 120px;
-  height: 110px;
+  width: 100px;
+  height: 90px;
   object-fit: contain;
 }
 
 .symbol-wrap {
-  /* border: solid 5px blue; */
+  border: solid 5px blue;
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
-  height: 55vh;
+  height: 50vh;
   display: flex;
-  margin-left: 80px;
+  margin-left: 50px;
+  margin-top: 30px;
   overflow-y: scroll;
   scrollbar-width: none;
 }
@@ -183,18 +191,36 @@ img {
   align-items: center;
   background-color: #ffffff;
   border-radius: 15px;
-  width: 80%; height: 130px;
+  width: 78%; height: 130px;
   margin-left: 115px;
-  box-shadow: 0px 2px 2px rgba(141, 141, 141, 0.719);;
+  box-shadow: 0px 2px 2px rgba(141, 141, 141, 0.719);
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
+
+
 #bottom-wrap>div>h3{
-  font-size: 23px;
+  font-size: 20px;
   color: #175cd3;
   margin: 0px 0px;
 }
 #bottom-wrap>div>p{
-  margin: 10px 0px;
+  margin: 5px 0px;
+  font-size: 15px;
 }
+@media (max-width: 1200px) {
+  #bottom-wrap>div>h3{
+    font-size: 15px;
+    color: #175cd3;
+    margin: 0px 0px;
+  }
+  #bottom-wrap>div>p{
+    margin: 10px 0px;
+    font-size: 10px;
+  }
+}
+
+
 .예시{
   margin-left: 200px;
   font-weight: bold;

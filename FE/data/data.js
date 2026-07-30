@@ -249,6 +249,7 @@ const washingSymbolList = [
     description: "세탁기 또는 손세탁으로 물세탁할 수 있습니다.",
     usageTip: "기호 안의 숫자는 사용할 수 있는 최대 물 온도입니다.",
     imagePath: "../assets/세탁기호/img_세탁기호 1.png",
+    tag: "물세탁"
   },
   {
     symbolId: 2,
@@ -256,6 +257,7 @@ const washingSymbolList = [
     description: "세탁기를 사용하지 않고 손으로 세탁해야 합니다.",
     usageTip: "30℃ 이하의 물에서 부드럽게 세탁하세요.",
     imagePath: "../assets/세탁기호/img_세탁기호 2.png",
+    tag: "물세탁"
   },
   {
     symbolId: 3,
@@ -263,6 +265,7 @@ const washingSymbolList = [
     description: "가정에서 물을 이용해 세탁하면 안 됩니다.",
     usageTip: "드라이클리닝 여부를 확인하세요.",
     imagePath: "../assets/세탁기호/img_세탁기호 3.png",
+    tag: "물세탁"
   },
   {
     symbolId: 4,
@@ -270,6 +273,7 @@ const washingSymbolList = [
     description: "표백제를 사용할 수 있습니다.",
     usageTip: "의류의 색상과 소재를 먼저 확인하세요.",
     imagePath: "../assets/세탁기호/img_세탁기호 4.png",
+    tag: "표백"
   },
   {
     symbolId: 5,
@@ -277,6 +281,7 @@ const washingSymbolList = [
     description: "염소계와 산소계 표백제를 사용하면 안 됩니다.",
     usageTip: "색 빠짐이나 섬유 손상이 발생할 수 있습니다.",
     imagePath: "../assets/세탁기호/img_세탁기호 5.png",
+    tag: "표백"
   },
   {
     symbolId: 6,
@@ -284,6 +289,7 @@ const washingSymbolList = [
     description: "회전식 건조기를 사용할 수 있습니다.",
     usageTip: "점의 개수가 많을수록 높은 온도로 건조할 수 있습니다.",
     imagePath: "../assets/세탁기호/img_세탁기호 6.png",
+    tag: "건조"
   },
   {
     symbolId: 7,
@@ -291,6 +297,7 @@ const washingSymbolList = [
     description: "회전식 건조기를 사용하면 안 됩니다.",
     usageTip: "자연 건조 방법을 이용하세요.",
     imagePath: "../assets/세탁기호/img_세탁기호 7.png",
+    tag: "건조"
   },
   {
     symbolId: 8,
@@ -298,6 +305,7 @@ const washingSymbolList = [
     description: "직사광선을 피해 그늘에서 건조해야 합니다.",
     usageTip: "색이 진하거나 햇빛에 약한 의류에 적합합니다.",
     imagePath: "../assets/세탁기호/img_세탁기호 8.png",
+    tag: "건조"
   },
   {
     symbolId: 9,
@@ -305,6 +313,7 @@ const washingSymbolList = [
     description: "의류를 평평한 곳에 눕혀서 건조해야 합니다.",
     usageTip: "니트처럼 늘어나기 쉬운 옷에 사용합니다.",
     imagePath: "../assets/세탁기호/img_세탁기호 9.png",
+    tag: "건조"
   },
   {
     symbolId: 10,
@@ -312,6 +321,7 @@ const washingSymbolList = [
     description: "다리미를 사용할 수 있습니다.",
     usageTip: "점의 개수에 따라 적정 다림질 온도가 다릅니다.",
     imagePath: "../assets/세탁기호/img_세탁기호 10.png",
+    tag: "다림질"
   },
   {
     symbolId: 11,
@@ -319,6 +329,7 @@ const washingSymbolList = [
     description: "다리미를 사용하면 안 됩니다.",
     usageTip: "열로 인해 소재가 변형될 수 있습니다.",
     imagePath: "../assets/세탁기호/img_세탁기호 11.png",
+    tag: "다림질"
   },
   {
     symbolId: 12,
@@ -326,6 +337,7 @@ const washingSymbolList = [
     description: "전문 세탁소에서 드라이클리닝할 수 있습니다.",
     usageTip: "원 안의 알파벳은 사용할 수 있는 세탁 용제를 뜻합니다.",
     imagePath: "../assets/세탁기호/img_세탁기호 12.png",
+    tag: "드라이클리닝"
   },
   {
     symbolId: 13,
@@ -333,6 +345,7 @@ const washingSymbolList = [
     description: "드라이클리닝을 하면 안 됩니다.",
     usageTip: "세탁 라벨의 다른 세탁 방법을 확인하세요.",
     imagePath: "../assets/세탁기호/img_세탁기호 13.png",
+    tag: "드라이클리닝"
   },
   {
     symbolId: 14,
@@ -340,6 +353,7 @@ const washingSymbolList = [
     description: "옷감의 형태 변형이나 손상을 막기 위해 손으로 쥐어짜는 것을 금지",
     usageTip: "적당히 짠 후 수건으로 감싸 눌러가며 물기를 제거하세요.",
     imagePath: "../assets/세탁기호/img_세탁기호 14.png",
+    tag: "기타"
   },
   {
     symbolId: 15,
@@ -347,6 +361,7 @@ const washingSymbolList = [
     description: "옷감의 형태 변형이나 손상을 막기 위해 옷을 비트는 것을 금지",
     usageTip: "세탁 후에는 마른 수건으로 감싸 물기를 제거하세요.",
     imagePath: "../assets/세탁기호/img_세탁기호 15.png",
+    tag: "기타"
   }
 ];
 
