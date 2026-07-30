@@ -1,59 +1,75 @@
 
-/*================== 건조 페이지 ==================*/
+/* ================= 건조 페이지 ================= */
 
 .dryingGuide{
-    width:100%;
-    background-color: #EFF5FC ;
+    padding: 50px;
+    background-color: #EFF5FC;
 }
 
 #dryTop h2{
-    margin:0;
-    font-size:35px;
+    margin: 0;
+    font-size: 34px;
+    color: #172033;
 }
 
 #dryTop p{
-    margin-top:10px;
-    color:gray;
+    margin-top: 10px;
+    color: gray;
 }
 
-/* 본문 */
+/* ================= 본문 ================= */
 
 .dry-Content{
-    display:flex;
-    justify-content:space-between;
-    margin-top:40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
 }
-
-/* 왼쪽 */
 
 .dry-Left{
-    width:30%;
+    width: 30%;
 }
 
-/* 의류 카드 */
+.dry-right{
+    width: 66%;
+}
+
+/* ================= 의류 카드 ================= */
 
 #clothes-card{
-    background-color:white;
-    border-radius:15px;
-    padding:20px;
-    text-align:center;
-    box-shadow:0px 3px 8px lightgray;
+
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
-#clothes-card img{
-    width:220px;
+.clothes-img{
+
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(#EEF5FF,#DDEAFF);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.clothes-img img{
+    width:170px;
 }
 
 #clothes-card h3{
-    margin-top:15px;
+    margin-top:20px;
 }
 
-#clothes-card span{
-    color:gray;
+#clothes-card h3 span:last-child{
     font-size:15px;
+    color:gray;
 }
 
-/* 세탁기호 */
+/* ================= 세탁기호 ================= */
 
 #symbol-list{
     display:flex;
@@ -63,75 +79,134 @@
 }
 
 .symbol-card{
-    width:48%;
-    background-color:white;
-    box-shadow:0px 3px 8px lightgray;
-    background:white;
-    border-radius:10px;
-    margin-bottom:15px;
+    width: 48%;
+    height: 90px;
+    margin-bottom: 15px;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    background-color: white;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 .symbol-card img{
-    width:80px;   
-    height:80px;
-    display: flex;
-    align-items: center;
+    width:70px;
 }
 
-/* 오른쪽 */
-
-.dry-right{
-    width:65%;
-}
-
-/* 권장 건조 */
+/* ================= 건조 정보 ================= */
 
 #dry-info{
-    background-color:white;
-    border:2px solid #8ce28c;
+    background:linear-gradient(135deg,#5B8DF2,#3A6EE8);
+    border-radius:20px;
+    padding:35px;
+    color:white;
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+/* 제목 */
+.dry-title{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.dry-icon{
+
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:rgba(255,255,255,.2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+}
+
+.dry-sub{
+
+    font-size:15px;
+}
+
+#dryName{
+    margin-top:5px;
+    font-size:32px;
+}
+
+/* ================= 정보 박스 ================= */
+
+.dry-box{
+
+    display:flex;
+    margin-top:35px;
+    background:white;
     border-radius:15px;
-    padding:30px;
+    
 }
 
-#dry-info h2{
-    margin:0;
+.dry-item{
+
+    width:33.333%;
+    padding:20px;
+    text-align:center;
+    border-right:1px solid #E5E5E5;
 }
 
-#dry-info h2:nth-child(2){
-    margin-top:25px;
+.dry-item:last-child{
+    border:none;
 }
 
-#dry-info p{
-    margin-top:20px;
-    color:gray;
-    line-height:30px;
+.dry-item-icon{
+
+    width:35px;
+    height:35px;
+    margin:auto;
+    border-radius:50%;
+    background:#EEF4FF;
+    color:#3A6EE8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
 }
 
-/* TIP */
+.dry-item h4{
+
+    margin:12px 0;
+    color:#172033;
+}
+
+.dry-item p{
+
+    color:#666;
+    line-height:24px;
+    font-size:14px;
+}
+
+/* ================= TIP ================= */
 
 #drt-tip{
-    margin-top:40px;
-    background-color:white;
-    border:2px solid pink;
+    margin-top:25px;
+    background:white;
+    border-left:6px solid pink;
     border-radius:15px;
-    padding:30px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 #drt-tip h2{
-    margin:0;
-    color:red;
+    margin-top:0;
+    color:pink;
 }
 
 #drt-tip p{
-    margin-top:20px;
-    color:gray;
-    line-height:30px;
+    color:#666;
+    line-height:28px;
 }
-
 /*================== 헤더 ==================*/
 
 #header{
