@@ -60,7 +60,7 @@ const clothesList = [
     clothesName: "청바지",
     categoryId: 2,
     materialId: 2,
-    imagePath: "../assets/의류/img_청바지.png",
+    imagePath: "./assets/의류/img_청바지.png",
   },
   {
     clothesId: 4,
@@ -403,6 +403,26 @@ const dryingGuideList = [
   },
 ];
 
+    // 의류별 건조 방법 연결
+    const clothesDryingList = [
+    { clothesId: 1, dryingId: 3 }, // 흰색 면 티셔츠 → 그늘 건조
+    { clothesId: 2, dryingId: 7 }, // 색상 면 티셔츠 → 뒤집어서 건조
+    { clothesId: 3, dryingId: 7 }, // 청바지 → 뒤집어서 건조
+    { clothesId: 4, dryingId: 2 }, // 니트 → 평건조
+    { clothesId: 5, dryingId: 3 }, // 후드티 → 그늘 건조
+    { clothesId: 6, dryingId: 1 }, // 와이셔츠 → 옷걸이 건조
+    { clothesId: 7, dryingId: 4 }, // 수건 → 햇빛 건조
+    { clothesId: 8, dryingId: 3 }, // 속옷 → 그늘 건조
+    { clothesId: 9, dryingId: 2 }, // 패딩 → 평건조
+    { clothesId: 10, dryingId: 2 }, // 울 코트 → 평건조
+    { clothesId: 11, dryingId: 3 }, // 가죽 재킷 → 그늘 건조
+    { clothesId: 12, dryingId: 3 }, // 실크 블라우스 → 그늘 건조
+    { clothesId: 13, dryingId: 3 }, // 린넨 셔츠 → 그늘 건조
+    { clothesId: 14, dryingId: 1 }  // 양말 → 옷걸이 건조
+];
+
+
+
 const clothesSymbolList = [
   { clothesId: 1, symbolId: 1 },
   { clothesId: 1, symbolId: 4 },
@@ -474,6 +494,8 @@ const clothesSymbolList = [
   { clothesId: 14, symbolId: 7 },
   { clothesId: 14, symbolId: 8 },
 ];
+
+
 
 function getLocalCategory() {
   // 객체 불러오기, 비어있으면 빈 배열 아니면 JSON.Parse();
@@ -550,6 +572,17 @@ function getLocalclothesSymbolList() {
     return clothesSymbolList;
   } else clothesSymbol = JSON.parse("clothesSymbolList");
   return clothesSymbol;
+}
+
+function getLocalClothesDryingList(){
+  let ClothesDrying = localStorage.getItem("ClothesDrying");
+  if(ClothesDrying == null){
+    localStorage.setItem("ClothesDrying",clothesDryingList);
+    return clothesDryingList;
+  }
+  else{ClothesDrying = JSON.parse("ClothesDrying");
+  }
+  return ClothesDrying;
 }
 
 function getAllLocalData() {
