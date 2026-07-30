@@ -153,11 +153,6 @@ img {
   object-fit: contain;
 }
 
-<<<<<<< HEAD
-
-
-
-=======
 .symbol-wrap {
   border: solid 5px blue;
   flex-wrap: wrap;
@@ -180,7 +175,6 @@ img {
   box-shadow: 0px 2px 2px rgba(141, 141, 141, 0.719);
   margin: 5px 10px;
 }
->>>>>>> b16eda3aadebfac6de5a5ddd6380a86c4c52f69a
 
 /* ============푸터영역===============*/
 #footer {
