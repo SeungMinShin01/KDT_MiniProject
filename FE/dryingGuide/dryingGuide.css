@@ -1,6 +1,6 @@
 
 /* ================= 건조 페이지 ================= */
-
+/* *{border: solid 1px red;} */
 .dryingGuide{
     width: 100%;
     padding: 50px;
@@ -26,7 +26,7 @@
     color: gray;
 }
 
- 
+a{text-decoration: none;}
 /* ================= 본문 ================= */
 
 .dry-Content{
@@ -241,12 +241,16 @@
     align-items:center;
 }
 
-.logo-wrap{
-    display:flex;
-    align-items:center;
+.logo-wrap>a{
+    display: flex;
+    align-items: center;
 }
+
 .main_logo {
   width: 85px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .logo{
