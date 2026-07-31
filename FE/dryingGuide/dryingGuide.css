@@ -4,11 +4,13 @@
 .dryingGuide{
     padding: 50px;
     background-color: #EFF5FC;
-    background-image: url("../assets/의류/img_세탁기.png");
+    background-image: url("../assets/의류/img_드라이화면.png");
     background-repeat: no-repeat;
-    background-size: 260px;
-    background-position: 95% 10px;
+    background-size: 320px;
+    background-position: right 60px top 5px;
+    background: linear-gradient(#cee5ff,#EFF5FC);
     
+
 }
 
 #dryTop h2{
