@@ -1,19 +1,25 @@
 /* ================= 건조 페이지 ================= */
-
+/* *{border: solid 1px red;} */
 .dryingGuide {
+  width: 100%;
   padding: 50px;
   background-color: #eff5fc;
-  background-image: url("../assets/의류/img_드라이화면.png");
+  background-image:
+    url("../assets/의류/img_드라이화면.png"), linear-gradient(#cde3fb, #eff5fc);
   background-repeat: no-repeat;
-  background-size: 320px;
+  background-size: 320px, cover;
   background-position: right 60px top 5px;
-  background: linear-gradient(#d6e9ff, #eff5fc);
+  overflow: hidden;
+  background-position:
+    right 60px top 5px,
+    center;
+  border-radius: 25px;
 }
 
 #dryTop h2 {
   margin: 0;
   font-size: 34px;
-  color: #172033;
+  color: #175cd3;
 }
 
 #dryTop p {
@@ -21,20 +27,26 @@
   color: gray;
 }
 
+a {
+  text-decoration: none;
+}
 /* ================= 본문 ================= */
 
 .dry-Content {
   display: flex;
-  justify-content: space-between;
+  gap: 55px;
   margin-top: 40px;
+  align-items: flex-start;
 }
 
 .dry-Left {
   width: 30%;
+  flex-shrink: 0;
 }
 
 .dry-right {
-  width: 66%;
+  width: 0;
+  flex: 1;
 }
 
 /* ================= 의류 카드 ================= */
@@ -201,6 +213,7 @@
   color: #666;
   line-height: 28px;
 }
+
 /*================== 헤더 ==================*/
 
 #header {
@@ -219,8 +232,14 @@
   align-items: center;
 }
 
-.logo-wrap {
+.logo-wrap > a {
   display: flex;
+  align-items: center;
+}
+
+.main_logo {
+  width: 85px;
+  justify-content: center;
   align-items: center;
 }
 
