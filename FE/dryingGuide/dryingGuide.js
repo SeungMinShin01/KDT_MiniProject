@@ -1,4 +1,3 @@
-let selectedId = 1;
 dryPage();
 function dryPage() {
   const url = new URLSearchParams(location.search);
