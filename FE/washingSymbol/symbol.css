@@ -148,9 +148,26 @@ a {
   border-radius: 7px;
   box-shadow: 1px 1px 3px rgba(141, 141, 141, 0.719);
 }
+.side{
+  width: 100%;
+  height: 100%;
+  padding: 5px 0px;
+  padding-left: 10px;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main-side>li:hover{
+  background: linear-gradient(to right, #FFFFFF, #c9def3);
+}
+.main-side li button:hover{
+  color: #175cd3;
+}
+
 .main-side > li {
-  padding: 5% 0px;
-  padding: 8px;
+  padding: 3px 1px;
   font-size: 18px;
   font-weight: bold;
   border-bottom: solid 1px rgba(141, 141, 141, 0.8);
@@ -163,7 +180,7 @@ img {
 }
 
 .symbol-wrap {
-  border: solid 5px blue;
+  /* border: solid 5px blue; */
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
@@ -222,11 +239,12 @@ img {
 
 
 .예시{
+  width: 70px;
   margin-left: 200px;
   font-weight: bold;
   font-size: 15px;
 }
-.ex1{margin-left: 50px;padding-top: 5px;}
+.ex1{margin-left: 50px; margin-right: 20px; padding-top: 5px;}
 .ex3{margin-right: 90px;}
 
 
