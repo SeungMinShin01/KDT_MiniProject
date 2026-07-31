@@ -1,7 +1,8 @@
 /* ================= 건조 페이지 ================= */
 /* *{border: solid 1px red;} */
 .dryingGuide {
-  width: 100%;
+  width: 94%;
+  max-width: 1500px;
   padding: 50px;
   background-color: #eff5fc;
   background-image:
