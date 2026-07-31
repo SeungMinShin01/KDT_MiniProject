@@ -157,6 +157,9 @@ button {
   font-size: 14px;
   padding: 7px 5px;
 }
+.btn-list > li > button:active {
+  background-color: #000;
+}
 .main-topMenu > div > div > input {
   margin-right: 20px;
   height: 40px;
@@ -254,7 +257,7 @@ button {
 
 /* 우측 설명 칸 */
 .right-main {
-  height: 550px;
+  height: 650px;
   border: 1px solid #c4c4c4;
   border-radius: 12px;
   display: flex;
@@ -303,4 +306,34 @@ button {
 .guide-detail {
   padding: 10px;
   margin-left: 30px;
+}
+
+.title2 {
+  padding: 10px;
+  color: #7d7d7d;
+  text-align: center;
+  margin-top: 55%;
+}
+
+.green-button {
+  padding: 10px;
+  border-radius: 12px;
+  border-color: #fff;
+  color: #398354;
+  background-color: #e9f7ed;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+
+.blue-button {
+  padding: 10px;
+  margin-top: 20px;
+  border-color: #fff;
+  border-radius: 12px;
+  color: #5074a8;
+  background-color: #eaf1fb;
+}
+.button-wrap {
+  display: flex;
+  justify-content: center;
 }

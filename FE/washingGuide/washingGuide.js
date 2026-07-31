@@ -1,11 +1,25 @@
-printClothesCard();
-function printClothesCard() {
+printClothesCard(0);
+function printClothesCard(type, keyword) {
   getAllLocalData();
   let html = "";
   let card = document.querySelector(".cloth-grid");
   console.log(card);
+
   for (let i = 0; i < clothesList.length; i++) {
     let object = clothesList[i];
+
+    console.log(keyword);
+    if (keyword != undefined) {
+      if (object.clothesName.indexOf(keyword) == -1) {
+        continue;
+      }
+    }
+
+    if (type != 0) {
+      if (object.categoryId != type) {
+        continue;
+      }
+    }
 
     const material = materialList.find(
       (i) => object.materialId == i.materialId,
@@ -76,6 +90,17 @@ function printDetail(value) {
       `;
     }
   }
+  html += `
+    <div class="button-wrap">
+    <button class="green-button" onclick="location.href='../washingSymbol/symbol.html'">세탁기호 확인</button>
+    <button class="blue-button" onclick="location.href='../dryingGuide/dryingGuide.html?no=${value}'">건조방법 확인</button>
+    </div>
+    `;
   console.log(html);
   html += description.innerHTML = html;
+}
+
+function searchClick() {
+  input = document.querySelector(".main-searchBox").value;
+  printClothesCard(0, input);
 }

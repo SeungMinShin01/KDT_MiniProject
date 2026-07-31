@@ -1,281 +1,266 @@
-
 /* ================= 건조 페이지 ================= */
 
-.dryingGuide{
-    padding: 50px;
-    background-color: #EFF5FC;
-    background-image: url("../assets/의류/img_드라이화면.png");
-    background-repeat: no-repeat;
-    background-size: 320px;
-    background-position: right 60px top 5px;
-    background: linear-gradient(#cee5ff,#EFF5FC);
-    
-
+.dryingGuide {
+  padding: 50px;
+  background-color: #eff5fc;
+  background-image: url("../assets/의류/img_드라이화면.png");
+  background-repeat: no-repeat;
+  background-size: 320px;
+  background-position: right 60px top 5px;
+  background: linear-gradient(#d6e9ff, #eff5fc);
 }
 
-#dryTop h2{
-    margin: 0;
-    font-size: 34px;
-    color: #172033;
+#dryTop h2 {
+  margin: 0;
+  font-size: 34px;
+  color: #172033;
 }
 
-#dryTop p{
-    margin-top: 10px;
-    color: gray;
+#dryTop p {
+  margin-top: 10px;
+  color: gray;
 }
-
 
 /* ================= 본문 ================= */
 
-.dry-Content{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+.dry-Content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
-.dry-Left{
-    width: 30%;
+.dry-Left {
+  width: 30%;
 }
 
-.dry-right{
-    width: 66%;
+.dry-right {
+  width: 66%;
 }
 
 /* ================= 의류 카드 ================= */
 
-#clothes-card{
-
-    background: white;
-    border-radius: 20px;
-    padding: 25px;
-    text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+#clothes-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.clothes-img{
-
-    width: 220px;
-    height: 220px;
-    margin: auto;
-    border-radius: 50%;
-    background: linear-gradient(#EEF5FF,#DDEAFF);
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.clothes-img {
+  width: 220px;
+  height: 220px;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(#eef5ff, #ddeaff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.clothes-img img{
-    width:170px;
+.clothes-img img {
+  width: 170px;
 }
 
-#clothes-card h3{
-    margin-top:20px;
+#clothes-card h3 {
+  margin-top: 20px;
 }
 
-#clothes-card h3 span:last-child{
-    font-size:15px;
-    color:gray;
+#clothes-card h3 span:last-child {
+  font-size: 15px;
+  color: gray;
 }
 
 /* ================= 세탁기호 ================= */
 
-#symbol-list{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    margin-top:20px;
+#symbol-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.symbol-card{
-   width: 48%;
-    height: 130px;
+.symbol-card {
+  width: 48%;
+  height: 130px;
 
-    margin-bottom: 15px;
-    background-color: white;
-    border-radius: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 15px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.symbol-card img{
-    width: 70px;
-    height: 70px;
+.symbol-card img {
+  width: 70px;
+  height: 70px;
 }
 
 /* ================= 건조 정보 ================= */
 
-#dry-info{
-    background:linear-gradient(135deg,#5B8DF2,#3A6EE8);
-    border-radius:20px;
-    padding:35px;
-    color:white;
-    box-shadow:0 12px 25px rgba(0,0,0,.15);
+#dry-info {
+  background: linear-gradient(135deg, #5b8df2, #3a6ee8);
+  border-radius: 20px;
+  padding: 35px;
+  color: white;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* 제목 */
-.dry-title{
-
-    display:flex;
-    align-items:center;
-    gap:18px;
+.dry-title {
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-.dry-icon{
-
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    background:rgba(255,255,255,.2);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:28px;
+.dry-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
 }
 
-.dry-sub{
-
-    font-size:15px;
+.dry-sub {
+  font-size: 15px;
 }
 
-#dryName{
-    margin-top:5px;
-    font-size:32px;
+#dryName {
+  margin-top: 5px;
+  font-size: 32px;
 }
 
 /* ================= 정보 박스 ================= */
 
-.dry-box{
-
-    display:flex;
-    margin-top:35px;
-    background:white;
-    border-radius:15px;
-    
+.dry-box {
+  display: flex;
+  margin-top: 35px;
+  background: white;
+  border-radius: 15px;
 }
 
-.dry-item{
-
-    width:33.333%;
-    padding:20px;
-    text-align:center;
-    border-right:1px solid #E5E5E5;
+.dry-item {
+  width: 33.333%;
+  padding: 20px;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
 }
 
-.dry-item:last-child{
-    border:none;
+.dry-item:last-child {
+  border: none;
 }
 
-.dry-item-icon{
-
-    width:35px;
-    height:35px;
-    margin:auto;
-    border-radius:50%;
-    background:#EEF4FF;
-    color:#3A6EE8;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-weight:bold;
+.dry-item-icon {
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: #3a6ee8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
-.dry-item h4{
-
-    margin:12px 0;
-    color:#172033;
+.dry-item h4 {
+  margin: 12px 0;
+  color: #172033;
 }
 
-.dry-item p{
-
-    color:#666;
-    line-height:24px;
-    font-size:14px;
+.dry-item p {
+  color: #666;
+  line-height: 24px;
+  font-size: 14px;
 }
 
 /* ================= TIP ================= */
 
-#drt-tip{
-    margin-top:25px;
-    background:white;
-    border-left:6px solid pink;
-    border-radius:15px;
-    padding:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+#drt-tip {
+  margin-top: 25px;
+  background: white;
+  border-left: 6px solid pink;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-#drt-tip h2{
-    margin-top:0;
-    color:pink;
+#drt-tip h2 {
+  margin-top: 0;
+  color: pink;
 }
 
-#drt-tip p{
-    color:#666;
-    line-height:28px;
+#drt-tip p {
+  color: #666;
+  line-height: 28px;
 }
 /*================== 헤더 ==================*/
 
-#header{
-    height:76px;
-    background:white;
-    border-bottom:1px solid #ddd;
+#header {
+  height: 76px;
+  background: white;
+  border-bottom: 1px solid #ddd;
 }
 
-#header-inner{
-    width:94%;
-    height:100%;
-    margin:0 auto;
+#header-inner {
+  width: 94%;
+  height: 100%;
+  margin: 0 auto;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo-wrap{
-    display:flex;
-    align-items:center;
+.logo-wrap {
+  display: flex;
+  align-items: center;
 }
 
-.logo{
-    margin-right:20px;
+.logo {
+  margin-right: 20px;
 }
 
-.logo-title{
-    margin:0;
-    color:#175cd3;
+.logo-title {
+  margin: 0;
+  color: #175cd3;
 }
 
-.logo-subtitle{
-    margin:0;
-    color:#5b7dbd;
+.logo-subtitle {
+  margin: 0;
+  color: #5b7dbd;
 }
 
-.nav{
-    display:flex;
+.nav {
+  display: flex;
 }
 
-.nav a{
-    text-decoration:none;
-    color:black;
-    margin-left:40px;
-    padding:28px 0;
+.nav a {
+  text-decoration: none;
+  color: black;
+  margin-left: 40px;
+  padding: 28px 0;
 }
 /* =========================
    푸터
 ========================= */
 
 #footer {
-    width: 100%;
-    height: 100px;
+  width: 100%;
+  height: 100px;
 }
 
 .footer-inner {
-    width: 94%;
-    max-width: 1500px;
-    margin: 14px auto;
+  width: 94%;
+  max-width: 1500px;
+  margin: 14px auto;
 }
 
 /* =========================
@@ -283,100 +268,80 @@
 ========================= */
 
 @media screen and (max-width: 950px) {
-    #header {
-        height: auto;
-    }
+  #header {
+    height: auto;
+  }
 
-    #header-inner {
-        padding: 18px 0;
+  #header-inner {
+    padding: 18px 0;
 
-        flex-direction: column;
-        gap: 18px;
-    }
+    flex-direction: column;
+    gap: 18px;
+  }
 
-    .nav {
-        gap: 20px;
-    }
+  .nav {
+    gap: 20px;
+  }
 
-    .nav a {
-        padding: 10px 0;
-        font-size: 14px;
-    }
+  .nav a {
+    padding: 10px 0;
+    font-size: 14px;
+  }
 
-    .dry-Content {
-        flex-direction: column;
-        gap: 40px;
-    }
+  .dry-Content {
+    flex-direction: column;
+    gap: 40px;
+  }
 
-    .dry-Left {
-        width: 100%;
-        max-width: 420px;
-        margin: 0 auto;
-    }
+  .dry-Left {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
 
-    .dry-right {
-        width: 100%;
-    }
+  .dry-right {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    #main {
-        width: 90%;
-    }
+  #main {
+    width: 90%;
+  }
 
-    #dryTop h2 {
-        font-size: 30px;
-    }
+  #dryTop h2 {
+    font-size: 30px;
+  }
 
-    .nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    #clothes-card img {
-        width: 190px;
-        height: 190px;
-    }
+  #clothes-card img {
+    width: 190px;
+    height: 190px;
+  }
 
-    .symbol-card {
-        height: 125px;
-    }
+  .symbol-card {
+    height: 125px;
+  }
 
-    #dry-info,
-    #drt-tip {
-        padding: 25px;
-    }
+  #dry-info,
+  #drt-tip {
+    padding: 25px;
+  }
 
-    #dry-info h2,
-    #drt-tip h2 {
-        font-size: 24px;
-    }
+  #dry-info h2,
+  #drt-tip h2 {
+    font-size: 24px;
+  }
 
-    #dry-info p,
-    #drt-tip p {
-        font-size: 16px;
-    }
+  #dry-info p,
+  #drt-tip p {
+    font-size: 16px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 body {
   margin: 0;

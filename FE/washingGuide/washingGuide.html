@@ -31,29 +31,34 @@
     </div>
     <!-- 메인 영역 -->
     <div id="main">
-      <div class="main-title">
-        <h2>의류별 세탁법</h2>
-        <div>소재와 종류에 맞는 세탁 방법을 확인하세요.</div>
-      </div>
       <div class="main-inner">
         <div class="left-main">
+          <div class="main-title">
+            <h2>의류별 세탁법</h2>
+            <div>소재와 종류에 맞는 세탁 방법을 확인하세요.</div>
+          </div>
           <div class="main-topMenu">
             <ol class="btn-list">
-              <li><button>전체</button></li>
-              <li><button>상의</button></li>
-              <li><button>하의</button></li>
-              <li><button>외투</button></li>
-              <li><button>속옷</button></li>
-              <li><button>기타</button></li>
+              <li><button onclick="printClothesCard('0')">전체</button></li>
+              <li><button onclick="printClothesCard('1')">상의</button></li>
+              <li><button onclick="printClothesCard('2')">하의</button></li>
+              <li><button onclick="printClothesCard('3')">외투</button></li>
+              <li><button onclick="printClothesCard('4')">양말</button></li>
+              <li><button onclick="printClothesCard('5')">속옷</button></li>
+              <li><button onclick="printClothesCard('6')">기타</button></li>
             </ol>
             <div>
               <div class="input-wrap">
                 <input
                   type="text"
                   class="main-searchBox"
-                  placeholder="의류명을 검색하세요.   "
+                  placeholder="의류명을 검색하세요."
                 />
-                <button class="search-btn" type="button">
+                <button
+                  class="search-btn"
+                  type="button"
+                  onclick="searchClick()"
+                >
                   <svg
                     xmlns="http://w3.org"
                     viewBox="0 0 24 24"
@@ -64,6 +69,7 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
+                    onclick="searchClick()"
                   >
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -87,16 +93,8 @@
         </div>
 
         <div class="right-main">
-          <div><img src="../assets/의류/img_흰티셔츠.png" /></div>
-
-          <h4>흰 티셔츠<span>(면)</span></h4>
+          <h4 class="title2">상품 카드를 클릭하면 상세 정보가 출력됩니다.</h4>
         </div>
-      </div>
-    </div>
-    <!-- 푸터 영역 -->
-    <div id="footer">
-      <div class="footer-inner">
-        <!-- 추후 작업 -->
       </div>
     </div>
     <script src="../data/data.js"></script>
