@@ -1,7 +1,7 @@
-let selectedId = 1;
 dryPage();
 function dryPage(){
-
+    const url = new URLSearchParams(location.search);
+    let selectedId = url.get("no");
     // 선택한 의류 찾기
     for(let i = 0; i < clothesList.length; i++){
         if(clothesList[i].clothesId == selectedId){
