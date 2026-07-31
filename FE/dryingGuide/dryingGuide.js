@@ -2,6 +2,7 @@ dryPage();
 function dryPage() {
   const url = new URLSearchParams(location.search);
   let selectedId = url.get("no");
+  if (selectedId == null) selectedId = 1;
   // 선택한 의류 찾기
   for (let i = 0; i < clothesList.length; i++) {
     if (clothesList[i].clothesId == selectedId) {

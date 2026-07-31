@@ -7,7 +7,7 @@ body {
   margin: 0;
   color: #172033;
   background-color: #f5f7fb;
-  font-family: Arial, "Noto Sans KR", sans-serif; 
+  font-family: Arial, "Noto Sans KR", sans-serif;
 }
 
 button,
@@ -73,26 +73,28 @@ button {
 
 .logo-wrap {
   display: flex;
-  align-items: center ;
+  align-items: center;
 }
 
-.logo-wrap > a{
+.logo-wrap > a {
   display: flex;
-  align-items: center ;
+  align-items: center;
   text-decoration: none;
 }
 /* ============메인영역===============*/
 
+body {
+}
 #main {
   width: 100%;
   max-width: 1550px;
+  margin: 0 auto;
   height: 663px;
   background-image: url("./FE/assets/main/background.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
-
 
 .main-top {
   margin-bottom: 20px;
@@ -140,13 +142,12 @@ button {
   border-radius: 6px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   text-decoration: none;
-   border: 1px solid #c6dbf5;
+  border: 1px solid #c6dbf5;
 }
 
 .service-card:hover {
   transform: translateY(1px);
 }
-
 
 .service-icon {
   width: 100px;
@@ -178,7 +179,6 @@ button {
   background-color: #c6dbf5;
   border-radius: 17px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-
 }
 
 .tip-icon {

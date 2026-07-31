@@ -157,9 +157,7 @@ button {
   font-size: 14px;
   padding: 7px 5px;
 }
-.btn-list > li > button:active {
-  background-color: #000;
-}
+
 .main-topMenu > div > div > input {
   margin-right: 20px;
   height: 40px;
